@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Global {
 
-    public static class Utils {
+    public static class Util {
 
         // RollDice(4) = Random.Range(0, 5)
         // -> [0, 1, 2, 3, 4] as possible values
