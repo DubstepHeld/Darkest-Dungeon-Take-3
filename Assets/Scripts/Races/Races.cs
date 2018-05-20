@@ -31,26 +31,24 @@ public class Races : MonoBehaviour {
     public Sprite[] deadSprites;
 
     public Sprite GetSprite(int index, bool player, bool attacker) {
-        Sprite sprite = new Sprite();
-        if (player == true) {
-            if (attacker == true) {
-                sprite = attackSprites[index];
+        if (player) {
+            if (attacker) {
+                return attackSprites[index];
             } else {
-                sprite = hitSprites[index];
+                return hitSprites[index];
             }
         } else {
-            if(attacker == true) {
-                sprite = attackSprites[index];
+            if (attacker) {
+                return attackSprites[index];
             } else {
-                sprite = hitSprites[index];
+                return hitSprites[index];
             }
         }
-        return sprite;
     }
 
     public void SetClass(int playerIndex) {
         Reroll();
-		if (playerIndex == 3) {
+        if (playerIndex == 3) {
             health = support.health;
             damage = support.damage;
             hitChance = support.hitChance;
@@ -102,7 +100,7 @@ public class Races : MonoBehaviour {
         } else {
             playerIndex = 5;
         }
-		Debug.Log("race = " + playerIndex);
+        Debug.Log("race = " + playerIndex);
     }
 
     public void Reroll() {
