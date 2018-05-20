@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class TransferVars : MonoBehaviour {
 
-    /*Not destroyed on load
+    /*
+     * Not destroyed on load
      * used as variable transfer from scene to scene
      */
 
