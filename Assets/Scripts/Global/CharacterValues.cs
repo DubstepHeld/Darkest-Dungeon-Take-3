@@ -6,7 +6,7 @@ namespace Global {
 
     public struct CharacterValues {
 
-        public CharacterType characterType;
+        public Race characterType;
         public WeaponType weaponType;
         public int weaponTier;   // Could this be replaced by an enum?
         public int weaponDamage; // Is this value necessary?
